@@ -67,11 +67,11 @@ Aplicación ↔ Kernel ↔ MemoryServer
 
 Cada servidor se ejecuta en un hilo independiente y el kernel se encarga de enrutar los mensajes hacia el servicio correspondiente.
 
-La simulación también incluye un fallo intencional del `FileServer`. Cuando se solicita un archivo determinado, este servidor termina su ejecución. Posteriormente se demuestra que otros servicios, como `MemoryServer`, continúan funcionando.
+La simulación también incluye un fallo intencional del FileServer. Cuando se solicita un archivo determinado, este servidor termina su ejecución. Posteriormente se demuestra que otros servicios, como MemoryServer, continúan funcionando.
 
 Este comportamiento permite representar una característica importante de los sistemas basados en microkernel: el aislamiento entre servicios puede evitar que el fallo de un componente provoque la caída completa del sistema.
 
-## Objetivo de la comparación
+Objetivo de la comparación
 
 Las dos implementaciones permiten observar diferencias estructurales entre ambas arquitecturas.
 
@@ -79,4 +79,4 @@ En el sistema por capas existe una organización jerárquica en la cual cada cap
 
 En el microkernel los servicios se encuentran más aislados y se comunican mediante mensajes utilizando el kernel como intermediario.
 
-El proyecto busca utilizar estas simulaciones para analizar las ventajas y desventajas de ambas alternativas en términos de modularidad, aislamiento de fallos, comunicación y complejidad.
+El proyecto busca utilizar estas simulaciones para analizar las ventajas y desventajas de ambas alternativas en términos de modularidad, aislamiento de fallos, comunicación y complejidad
